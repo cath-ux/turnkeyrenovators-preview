@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Page Not Found | TurnKey Renovators</title>
+<link rel="icon" href="https://www.turnkeyrenovators.com/wp-content/uploads/2023/12/cropped-favicon-50x50.png" sizes="32x32">
+<link rel="icon" href="https://www.turnkeyrenovators.com/wp-content/uploads/2023/12/cropped-favicon-222x222.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://www.turnkeyrenovators.com/wp-content/uploads/2023/12/cropped-favicon-222x222.png">
+<meta name="description" content="The page you were looking for has moved. Find TurnKey Renovators services, service areas and contact details here.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cath-ux.github.io/turnkeyrenovators-preview/assets/tkr-base.css">
+<style>
+
+.tabrow{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:34px}
+.tabrow [role="tab"]{min-height:50px;padding:0 24px;border-radius:999px;border:1px solid var(--line);background:#fff;font-weight:700;font-size:15.5px;cursor:pointer;transition:background .3s,color .3s,border-color .3s}
+.tabrow [role="tab"][aria-selected="true"]{background:var(--char);color:#fff;border-color:var(--char)}
+.sppanel{display:grid;grid-template-columns:1.05fr .95fr;gap:0;background:var(--stone);border-radius:26px;overflow:hidden}
+.sppanel.swap{animation:rise .7s var(--ease) both}
+.sppanel[hidden]{display:none}
+.spimg{position:relative;min-height:320px}
+.spimg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.sptext{padding:52px 52px 48px}
+.sptext h3{font-size:34px;color:var(--char)}
+.sptext p{color:var(--muted);margin-top:14px}
+.ticks{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:12px 22px;margin:26px 0 30px}
+.ticks li{display:flex;gap:10px;font-weight:600;font-size:15.5px;line-height:1.4}
+.ticks li::before{content:"";flex:0 0 16px;height:9px;border:solid var(--sky-d);border-width:0 0 2.5px 2.5px;transform:rotate(-45deg);margin-top:4px}
+.specs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.spec{background:#fff;border-radius:22px;padding:30px 28px;border:1px solid var(--stone-2);transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
+.spec:hover{transform:translateY(-6px);box-shadow:0 24px 48px rgba(19,21,24,.1)}
+.sico,.iico{width:58px;height:58px;border-radius:16px;display:grid;place-items:center;background:rgba(42,101,152,.1);color:var(--sky-d)}
+.sico svg,.iico svg{width:28px;height:28px}
+.spec h3{margin-top:20px;font-size:24px;color:var(--char)}
+.spec p{color:var(--muted);font-size:15.5px;margin-top:10px}
+.spec ul{list-style:none;margin-top:18px;border-top:1px solid var(--stone-2)}
+.spec li{padding:10px 0;border-bottom:1px solid var(--stone-2);font-weight:600;font-size:15px}
+.tblwrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:22px;border:1px solid var(--line);background:#fff}
+table{border-collapse:collapse;width:100%;min-width:720px}
+th,td{padding:22px 26px;text-align:left;vertical-align:top;font-size:16px;border-bottom:1px solid var(--stone-2)}
+thead th{background:var(--char);color:#fff;font:700 12.5px var(--body);letter-spacing:.14em;text-transform:uppercase}
+thead th.full{background:var(--sky-d)}
+tbody th{font:500 20px var(--head);color:var(--char);background:var(--stone);width:20%}
+td.full{background:#f1f6fb;font-weight:600;color:var(--char);box-shadow:inset 3px 0 0 var(--sky-d)}
+tbody tr:last-child>*{border-bottom:0}
+.permitband{background:#0f1113}
+.permitband::before{content:"";position:absolute;inset:0;background:url(https://www.turnkeyrenovators.com/wp-content/uploads/2023/12/hero-image.jpg) center/cover;opacity:.16}
+.permitband::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,17,19,.6),rgba(15,17,19,.94))}
+.permitband .wrap{position:relative;z-index:1}
+.icards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.icard{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:22px;padding:28px}
+.icard .iico{background:rgba(77,152,210,.16);color:var(--sky-l)}
+.icard h3{margin-top:18px;font-size:22px;color:#fff}
+.icard p{color:#b9c0c8;font-size:15.5px;margin-top:8px}
+.oldbld{margin-top:22px;display:flex;gap:18px;align-items:flex-start;padding:24px 28px;border-radius:22px;background:rgba(77,152,210,.12);border:1px solid rgba(134,189,230,.3)}
+.oldbld b{font:500 21px var(--head);color:#fff;display:block}
+.oldbld p{color:#cfd5db;margin-top:4px}
+.track-wrap{position:relative}
+.track{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:6px 2px 10px;list-style:none;position:relative}
+.track::-webkit-scrollbar{display:none}
+.stp{flex:0 0 300px;scroll-snap-align:start;background:#fff;border-radius:22px;padding:30px 28px;border:1px solid var(--stone-2);position:relative}
+.stp::after{content:"";position:absolute;top:58px;right:-19px;width:20px;border-top:2px dashed var(--sky)}
+.stp:last-child::after{display:none}
+.sn{display:grid;place-items:center;width:56px;height:56px;border-radius:50%;background:var(--char);color:#fff;font:500 20px var(--head)}
+.stp h3{margin-top:20px;font-size:22px;color:var(--char)}
+.stp p{color:var(--muted);font-size:15.5px;margin-top:8px}
+.trackbar{display:flex;align-items:center;gap:16px;margin-top:26px}
+.trackbar .prog{flex:1;height:3px;background:var(--stone-2);border-radius:3px;overflow:hidden}
+.trackbar .prog i{display:block;height:100%;width:30%;background:var(--sky-d);border-radius:3px;transition:width .3s}
+.trackbar button{width:50px;height:50px;border-radius:50%;border:1.5px solid var(--char);background:none;cursor:pointer;display:grid;place-items:center}
+.trackbar button:hover{background:var(--char);color:#fff}
+.trackbar svg{width:18px;height:18px}
+.costs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:56px;border-top:1px solid var(--line)}
+.crow{display:grid;grid-template-columns:64px 1fr;gap:18px;padding:28px 0;border-bottom:1px solid var(--line)}
+.cn{font:400 46px/1 var(--head);color:var(--sky-d)}
+.crow h3{font-size:23px;color:var(--char)}
+.crow p{color:var(--muted);font-size:15.5px;margin-top:6px}
+.estnote{margin-top:36px;display:flex;justify-content:space-between;align-items:center;gap:20px 36px;flex-wrap:wrap;padding:30px 34px;border-radius:24px;background:var(--stone)}
+.estnote p{max-width:62ch;color:var(--text);font-size:17px}
+.estnote .ctapair{margin-top:0}
+.whylist{list-style:none;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-top:1.5px solid var(--char)}
+.whylist li{padding:30px 26px 6px 0}
+.whylist li+li{padding-left:26px;border-left:1px solid var(--line)}
+.wn{font:italic 400 58px/1 var(--head);color:var(--sky-d)}
+.whylist h3{margin-top:18px;font-size:23px;color:var(--char)}
+.whylist p{color:var(--muted);font-size:15.5px;margin-top:8px}
+.rel{list-style:none;border-top:1px solid rgba(255,255,255,.14)}
+.rel a{display:grid;grid-template-columns:70px 1fr 54px;gap:22px;align-items:center;padding:28px 6px;border-bottom:1px solid rgba(255,255,255,.14);text-decoration:none;color:#fff;transition:padding .5s var(--ease),background .4s}
+.rel .rn{font:400 30px var(--head);color:var(--sky)}
+.rel b{display:block;font:500 28px var(--head)}
+.rel .rt span{color:#aab2bb;font-size:15.5px}
+.rel .go{width:54px;height:54px;border-radius:50%;border:1.5px solid rgba(255,255,255,.4);display:grid;place-items:center;transition:background .3s,transform .5s var(--ease)}
+.rel .go svg{width:18px;height:18px}
+.rel a:hover{padding-left:18px;background:rgba(255,255,255,.04)}
+.rel a:hover .go{background:var(--sky);border-color:var(--sky);color:#0c0f12;transform:rotate(-45deg)}
+.chips{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+.chips a{display:inline-flex;align-items:center;min-height:48px;padding:0 22px;border-radius:999px;border:1px solid var(--line);background:#fff;text-decoration:none;font-weight:700;font-size:15px;transition:background .3s,color .3s,transform .4s var(--ease)}
+.chips a:hover{background:var(--char);color:#fff;transform:translateY(-2px)}
+.chips a.hq{background:var(--sky);border-color:var(--sky);color:#0c0f12}
+@media (max-width:1180px){.specs,.icards{grid-template-columns:repeat(2,minmax(0,1fr))}.whylist{grid-template-columns:repeat(2,minmax(0,1fr))}.whylist li:nth-child(3){padding-left:0;border-left:0}.sppanel{grid-template-columns:1fr}.spimg{min-height:280px}}
+@media (max-width:760px){.specs,.icards,.whylist,.costs{grid-template-columns:minmax(0,1fr)}.whylist li,.whylist li+li{padding:24px 0 8px;border-left:0}.sptext{padding:30px 22px 32px}.sptext h3{font-size:27px}.ticks{grid-template-columns:1fr}.stp{flex-basis:84%}.rel a{grid-template-columns:44px 1fr 44px;gap:14px;padding:22px 0}.rel a:hover{padding-left:0}.rel b{font-size:22px}.rel .go{width:44px;height:44px}.crow{grid-template-columns:48px 1fr}.cn{font-size:36px}.tabrow{justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin:0 -18px 26px;padding:0 18px}.tabrow [role="tab"]{flex:none}}
+
+.cityswitch{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:28px}
+.cityswitch label{font-weight:700;font-size:14.5px;color:#cfd5db}
+.cityswitch select{min-height:50px;padding:0 44px 0 18px;border-radius:999px;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.08) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2386bde6' stroke-width='2.5'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") right 16px center/16px no-repeat;color:#fff;font:700 15.5px var(--body);appearance:none;-webkit-appearance:none;cursor:pointer}
+.cityswitch select option{color:#111}
+.cityswitch button{min-height:50px;padding:0 22px;border-radius:999px;border:1.5px solid rgba(255,255,255,.5);background:none;color:#fff;font-weight:700;cursor:pointer}
+.cityswitch button:hover{background:#fff;color:var(--char)}
+.lcards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.lcard{border-radius:22px;padding:30px 28px;background:var(--stone);position:relative;overflow:hidden;transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
+.lcard:hover{transform:translateY(-6px);box-shadow:0 24px 48px rgba(19,21,24,.1)}
+.lcard::after{content:"";position:absolute;right:-40px;top:-40px;width:120px;height:120px;border-radius:50%;background:rgba(77,152,210,.12)}
+.lico{width:58px;height:58px;border-radius:16px;display:grid;place-items:center;background:var(--char);color:var(--sky-l)}
+.lico svg{width:28px;height:28px}
+.lcard h3{margin-top:20px;font-size:23px;color:var(--char)}
+.lcard p{color:var(--muted);font-size:15.5px;margin-top:8px}
+.drows{list-style:none;border-top:1px solid var(--line)}
+.drow{display:grid;grid-template-columns:150px 1fr 56px;gap:28px;align-items:center;padding:24px 0;border-bottom:1px solid var(--line)}
+.drow img{width:150px;height:100px;object-fit:cover;border-radius:14px;transition:transform .6s var(--ease)}
+.drow:hover img{transform:scale(1.05)}
+.drow h3{font-size:28px}
+.drow h3 a{text-decoration:none;color:var(--char)}
+.drow h3 a:hover{color:var(--sky-d)}
+.drow .subs{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:10px}
+.drow .subs a{font-size:15px;font-weight:600;color:var(--muted);text-decoration:none;padding:4px 0}
+.drow .subs a:hover{color:var(--sky-d);text-decoration:underline}
+.drow .go{width:56px;height:56px;border-radius:50%;border:1.5px solid var(--char);display:grid;place-items:center;transition:background .3s,color .3s,transform .5s var(--ease)}
+.drow .go svg{width:18px;height:18px}
+.drow:hover .go{background:var(--char);color:#fff;transform:rotate(-45deg)}
+.mapband{background:#0f1a26}
+.mapcard{position:relative;border-radius:28px;overflow:hidden;background:#0b1520;border:1px solid rgba(134,189,230,.18)}
+.lmap{width:100%;height:auto;display:block}
+.lmap .lk{fill:rgba(77,152,210,.16);stroke:rgba(134,189,230,.4);stroke-width:1.5}
+.lmap .rv{fill:none;stroke:rgba(134,189,230,.45);stroke-width:8;stroke-linecap:round}
+.lmap .wl{font:italic 400 21px var(--head);fill:#86bde6}
+.lmap .zone{fill:rgba(77,152,210,.1);stroke:rgba(134,189,230,.35);stroke-dasharray:5 7}
+.lmap .route{fill:none;stroke:var(--sky);stroke-width:4;stroke-linecap:round}
+.lmap .traveler{fill:#fff}
+.lmap .np circle{fill:#1c2a38;stroke:#86bde6;stroke-width:2;transition:fill .3s}
+.lmap .np text{font:700 15px var(--body);fill:#cfd8e2;paint-order:stroke;stroke:#0b1520;stroke-width:5px}
+.lmap .np:hover circle{fill:var(--sky)}
+.lmap .mpin .core{fill:var(--sky);stroke:#fff;stroke-width:4}
+.lmap .mpin .ring{fill:none;stroke:var(--sky);stroke-width:2;opacity:0}
+.lmap .mpin text{font:500 28px var(--head);fill:#fff;paint-order:stroke;stroke:#0b1520;stroke-width:6px}
+.lmap .hqpin circle{fill:#fff;stroke:var(--sky);stroke-width:4}
+.lmap .hqpin text{font:700 16px var(--body);fill:#fff;paint-order:stroke;stroke:#0b1520;stroke-width:5px}
+.mapfacts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid rgba(134,189,230,.18)}
+.mapfacts div{padding:26px 30px}
+.mapfacts div+div{border-left:1px solid rgba(134,189,230,.18)}
+.mapfacts b{display:block;font:400 38px/1 var(--head);color:#fff}
+.mapfacts span{display:block;color:#aab8c6;font-size:14.5px;margin-top:8px}
+.flowbox{position:relative}
+.flowbox svg{position:absolute;left:10%;top:40px;width:80%;height:4px;overflow:visible}
+.flowbox svg line{stroke:var(--sky);stroke-width:2;stroke-dasharray:6 9}
+.flow{position:relative;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:28px;list-style:none}
+.flow li{text-align:center}
+.flow .dot{width:80px;height:80px;border-radius:50%;margin:0 auto 24px;background:#fff;border:1.5px solid var(--sky);display:grid;place-items:center;font:500 30px var(--head);position:relative;z-index:1;transition:background .35s,color .35s}
+.flow li:hover .dot{background:var(--char);color:#fff}
+.flow h3{font-size:22px;color:var(--char)}
+.flow p{font-size:15.5px;color:var(--muted);margin-top:10px}
+.quote{max-width:900px;margin:0 auto;text-align:center}
+.quote blockquote{font:400 clamp(24px,2.6vw,34px)/1.4 var(--head);color:var(--char);margin-top:18px}
+.quote cite{display:block;margin-top:22px;font-style:normal;font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:13px;color:var(--sky-d)}
+.qrow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:48px}
+.qc{background:#fff;border-radius:22px;padding:26px;border:1px solid var(--stone-2)}
+.qc p{font-size:15.5px}
+.qc b{display:block;margin-top:14px;font-size:15px}
+.qc span{font-size:14px;color:var(--muted)}
+.ncards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.ncard{position:relative;display:block;padding:26px 80px 26px 28px;border-radius:20px;border:1px solid var(--line);background:#fff;text-decoration:none;color:var(--text);transition:background .35s,color .35s,transform .5s var(--ease)}
+.ncard b{display:block;font:500 25px var(--head)}
+.ncard span{font-size:14.5px;color:var(--muted)}
+.ncard .go{position:absolute;right:24px;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;border:1.5px solid var(--char);display:grid;place-items:center}
+.ncard .go svg{width:16px;height:16px}
+.ncard:hover{background:var(--char);color:#fff;transform:translateY(-4px)}
+.ncard:hover span{color:#b3bac3}
+.ncard:hover .go{border-color:#fff}
+@media (prefers-reduced-motion:no-preference){
+  .mo .mapcard .route{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1.6s var(--ease) .4s}
+  .mo .mapcard.in .route{stroke-dashoffset:0}
+  .mo .mapcard .rv{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 2.4s var(--ease)}
+  .mo .mapcard.in .rv{stroke-dashoffset:0}
+  .mo .lmap .mpin .ring{animation:pulse 2.8s ease-out infinite}
+  .mo .lmap .mpin .ring.r2{animation-delay:1.4s}
+}
+@keyframes pulse{from{transform:scale(.8);opacity:.9}to{transform:scale(3.6);opacity:0}}
+@media (prefers-reduced-motion:reduce){.lmap .traveler{display:none}}
+@media (max-width:1180px){.lcards,.ncards{grid-template-columns:repeat(2,minmax(0,1fr))}.flow{grid-template-columns:minmax(0,1fr);gap:0}.flowbox svg{display:none}.flow li{display:grid;grid-template-columns:80px 1fr;gap:22px;text-align:left;padding-bottom:30px;position:relative}.flow li::before{content:"";position:absolute;left:39px;top:80px;bottom:0;border-left:2px dashed var(--sky)}.flow li:last-child::before{display:none}.flow .dot{margin:0}.qrow{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:760px){.lcards,.ncards,.mapfacts{grid-template-columns:minmax(0,1fr)}.mapfacts div+div{border-left:0;border-top:1px solid rgba(134,189,230,.18)}.drow{grid-template-columns:76px minmax(0,1fr) 44px;gap:14px}.drow img{width:76px;height:64px}.drow h3{font-size:22px}.drow .go{width:44px;height:44px}.lmap .np text,.lmap .wl{display:none}.lmap .mpin text{font-size:44px}.lmap .hqpin text{font-size:26px}}
+
+.sppanel.noimg{grid-template-columns:minmax(0,1fr);border-left:4px solid var(--sky)}
+.sptext.spsplit{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:0;align-items:center;padding:0}.spsplit>div:first-child{padding:48px 52px}
+.spsplit .sptag{display:inline-flex;font:700 12px var(--body);letter-spacing:.18em;text-transform:uppercase;color:var(--sky-d);margin-bottom:14px}
+.spsplit>div:last-child{align-self:stretch;display:flex;align-items:center;background:#e4eef7;padding:44px 48px}
+.spsplit .ticks{grid-template-columns:minmax(0,1fr);margin:0;gap:16px}
+.spsplit .btn{margin-top:22px}
+@media (max-width:900px){.sptext.spsplit{grid-template-columns:minmax(0,1fr)}.spsplit>div:first-child{padding:30px 22px 26px}.spsplit>div:last-child{border-left:0;border-top:1px solid var(--stone-2);padding:26px 22px}}
+.spblank{background:linear-gradient(135deg,#1c2a38,#131518);display:grid;place-items:center;overflow:hidden}
+.spblank::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(134,189,230,.12) 1px,transparent 1px),linear-gradient(90deg,rgba(134,189,230,.12) 1px,transparent 1px);background-size:28px 28px}
+.spblank span{position:relative;font:italic 400 clamp(30px,3.4vw,46px) var(--head);color:var(--sky-l);text-align:center;padding:24px}
+.dark-alt{background:var(--char)}
+@media (max-width:1180px){.specs,.icards{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media (max-width:760px){.specs,.icards{grid-template-columns:minmax(0,1fr)!important}}
+.geo .facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1.5px solid var(--char);border-bottom:1px solid var(--line)}
+.geo .facts div{padding:26px 24px 26px 0;display:flex;flex-direction:column}
+.geo .facts div+div{padding-left:24px;border-left:1px solid var(--line)}
+.geo .facts b{display:block;font:400 40px/1 var(--head);color:var(--char);letter-spacing:-.02em}
+.geo .facts span{display:block;font:700 12px var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--sky-d);margin-top:10px}
+.geo .facts small{display:block;color:var(--muted);font-size:14px;margin-top:auto;padding-top:8px}
+.geo .intro{font:400 clamp(22px,2.2vw,28px)/1.45 var(--head);color:var(--char);max-width:46ch;margin:0 0 40px}
+.geocols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:40px}
+.geocol{background:var(--stone);border-radius:22px;padding:28px}
+.geocol h3{font:700 12.5px var(--body);letter-spacing:.18em;text-transform:uppercase;color:var(--sky-d);display:flex;align-items:center;gap:10px}
+.geocol h3 svg{width:20px;height:20px}
+.geocol ul{list-style:none;margin-top:16px;display:flex;flex-wrap:wrap;gap:8px}
+.geocol li{padding:9px 14px;border-radius:999px;background:#fff;border:1px solid var(--line);font-weight:600;font-size:14.5px;transition:background .3s,color .3s,transform .4s var(--ease)}
+.geocol li:hover{background:var(--char);color:#fff;transform:translateY(-2px)}
+.geohist{margin-top:22px;display:flex;gap:18px;align-items:flex-start;padding:24px 28px;border-radius:22px;background:var(--char);color:#dfe4e9}
+.geohist .iico{flex:none;background:rgba(77,152,210,.2);color:var(--sky-l)}
+@media (max-width:1180px){.geo .facts{grid-template-columns:repeat(2,minmax(0,1fr))}.geo .facts div:nth-child(3){padding-left:0;border-left:0}.geo .facts div:nth-child(n+3){border-top:1px solid var(--line)}.geocols{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:760px){.geo .facts b{font-size:32px}.geo .facts div{padding:20px 12px 20px 0}.geo .facts div+div{padding-left:12px}.geo .facts div:nth-child(3){padding-left:0}}
+
+.plines{columns:3 300px;column-gap:56px;margin-top:var(--s5)}
+.pgroup{break-inside:avoid;margin:0 0 44px}
+.pgroup h3{font-size:22px;color:var(--char);padding-bottom:14px;border-bottom:1.5px solid var(--char)}
+.pgroup ul{list-style:none}
+.pgroup li a{display:flex;justify-content:space-between;align-items:center;gap:14px;min-height:48px;padding:10px 2px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--text);font-weight:600;font-size:16px;transition:color .3s,padding .4s var(--ease)}
+.pgroup li a .ar{display:grid;place-items:center;width:28px;height:28px;flex:none;opacity:.45;transition:opacity .3s,transform .4s var(--ease)}
+.pgroup li a .ar svg{width:15px;height:15px}
+.pgroup li a:hover{color:var(--sky-d);padding-left:8px}
+.pgroup li a:hover .ar{opacity:1;transform:rotate(-45deg)}
+.pgroup li a:focus-visible{outline:2px solid var(--sky-d);outline-offset:2px}
+.plone{list-style:none;margin-top:var(--s4);border-top:1px solid var(--line)}
+.plone a{display:grid;grid-template-columns:1fr 54px;gap:22px;align-items:center;padding:24px 6px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--text)}
+.plone b{display:block;font:500 28px var(--head);color:var(--char)}
+.plone .pt span{color:var(--muted);font-size:15px}
+.plone .go{width:54px;height:54px;border-radius:50%;border:1.5px solid var(--char);display:grid;place-items:center;transition:background .3s,color .3s,transform .5s var(--ease)}
+.plone .go svg{width:18px;height:18px}
+.plone a:hover .go{background:var(--char);color:#fff;transform:rotate(-45deg)}
+.plone a:hover b{color:var(--sky-d)}
+@media (max-width:760px){.plines{columns:1}.plone b{font-size:23px}.plone a{grid-template-columns:1fr 44px;gap:14px}.plone .go{width:44px;height:44px}}
+
+.hrows{list-style:none;border-top:1px solid var(--line)}
+.hrow{border-bottom:1px solid var(--line);padding:6px 0 18px}
+.hmain{display:grid;grid-template-columns:70px 1fr 54px;gap:22px;align-items:center;padding:20px 6px 8px;text-decoration:none;color:var(--text)}
+.hmain b{display:block;font:500 29px var(--head);color:var(--char)}
+.hmain span span{color:var(--muted);font-size:15.5px}
+.hmain .rn{font:400 30px var(--head);color:var(--sky-d)}
+.hmain .go{width:54px;height:54px;border-radius:50%;border:1.5px solid var(--char);display:grid;place-items:center;transition:background .3s,color .3s,transform .5s var(--ease)}
+.hmain .go svg{width:18px;height:18px}
+.hmain:hover .go{background:var(--char);color:#fff;transform:rotate(-45deg)}
+.hmain:hover b{color:var(--sky-d)}
+.hrow .subs{display:flex;flex-wrap:wrap;gap:8px;padding-left:98px}
+.hrow .subs a{display:inline-flex;align-items:center;min-height:40px;padding:0 16px;border-radius:999px;border:1px solid var(--line);text-decoration:none;font-weight:700;font-size:14.5px;background:var(--stone)}
+.hrow .subs a:hover{background:var(--char);color:#fff;border-color:var(--char)}
+.divgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.divcard{border-radius:24px;overflow:hidden;background:#fff;border:1px solid var(--stone-2);display:flex;flex-direction:column}
+.divcard .dimg{aspect-ratio:16/8;overflow:hidden}.divcard .dimg img{width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease)}
+.divcard:hover .dimg img{transform:scale(1.05)}
+.divcard .dbody{padding:28px 30px 30px;flex:1}
+.divcard h3{font-size:30px}.divcard h3 a{text-decoration:none;color:var(--char)}
+.divcard ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.divcard li a{display:inline-flex;min-height:40px;align-items:center;padding:0 14px;border-radius:999px;background:var(--stone);text-decoration:none;font-weight:600;font-size:14.5px}
+.divcard li a:hover{background:var(--char);color:#fff}
+.cgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.ccard{display:block;border-radius:22px;padding:26px 28px;background:#fff;border:1px solid var(--line);text-decoration:none;color:var(--text);transition:background .35s,color .35s,transform .5s var(--ease)}
+.ccard b{display:block;font:500 26px var(--head)}
+.ccard span{display:block;color:var(--muted);font-size:14.5px;margin-top:6px}
+.ccard:hover{background:var(--char);color:#fff;transform:translateY(-4px)}.ccard:hover span{color:#b3bac3}
+.teamgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.tm{border-radius:24px;overflow:hidden;background:#fff;border:1px solid var(--stone-2)}
+.tm .ph{aspect-ratio:4/5;background:linear-gradient(135deg,#1c2a38,#131518);display:grid;place-items:center;overflow:hidden}
+.tm .ph img{width:100%;height:100%;object-fit:cover}
+.tm .ph span{font:400 64px var(--head);color:var(--sky-l)}
+.tm h3{padding:22px 24px 26px;font-size:26px}
+.qgrid2{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.qgrid2 figure{background:#fff;border-radius:22px;padding:28px;border:1px solid var(--stone-2);display:flex;flex-direction:column}
+.qgrid2 p{flex:1;font-size:16px}
+.qgrid2 figcaption{margin-top:18px;padding-top:14px;border-top:1px solid var(--stone-2);font-weight:700}
+.qgrid2 figcaption span{display:block;font-weight:500;color:var(--muted);font-size:14px}
+.posts3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.pcard{display:flex;flex-direction:column;border-radius:22px;overflow:hidden;background:#fff;border:1px solid var(--stone-2);text-decoration:none;color:var(--text);transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
+.pcard:hover{transform:translateY(-5px);box-shadow:0 24px 50px rgba(19,21,24,.12)}
+.pcard .pi{aspect-ratio:16/10;overflow:hidden;background:var(--char)}.pcard .pi img{width:100%;height:100%;object-fit:cover}
+.pcard .pb{padding:24px 26px 28px}.pcard .pdate{display:block;font:700 12px var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--sky-d);margin-bottom:8px}.pcard h3{font-size:23px;color:var(--char)}.pcard .more{display:inline-flex;margin-top:12px;font-weight:700;font-size:15px;color:var(--sky-d)}
+.contactgrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:28px;align-items:stretch}
+.cfacts{background:var(--char);color:#fff;border-radius:26px;padding:40px;display:flex;flex-direction:column;gap:26px}
+.cfacts h3{font:700 12.5px var(--body);letter-spacing:.18em;text-transform:uppercase;color:var(--sky-l)}
+.cfacts p,.cfacts a{font:500 22px/1.4 var(--head);color:#fff;text-decoration:none;margin-top:8px;display:block}
+.cfacts .map{flex:1;min-height:240px;border-radius:18px;overflow:hidden}.cfacts .map iframe{width:100%;height:100%;border:0;display:block;min-height:240px}
+.cform{background:#fff;border-radius:26px;padding:14px;border:1px solid var(--stone-2);min-height:760px}
+.cform iframe{width:100%;height:100%;min-height:760px;border:0;border-radius:18px}
+.gal2{columns:4;column-gap:14px}
+.gal2 button{display:block;width:100%;margin:0 0 14px;border:0;padding:0;border-radius:14px;overflow:hidden;cursor:pointer;background:#222;break-inside:avoid;position:relative}
+.gal2 img{width:100%;height:auto;display:block;transition:transform .7s var(--ease)}
+.gal2 button:hover img{transform:scale(1.05)}
+.gal2 .pl{position:absolute;left:12px;bottom:12px;display:inline-flex;align-items:center;gap:8px;background:rgba(19,21,24,.82);color:#fff;padding:6px 12px;border-radius:999px;font-weight:700;font-size:13px}
+.gal2 .pl svg{width:12px;height:12px}
+dialog.vmodal{border:0;padding:0;background:transparent;max-width:min(92vw,1100px);width:100%;margin:auto}
+dialog.vmodal::backdrop{background:rgba(8,9,11,.9)}
+dialog.vmodal video,dialog.vmodal img{width:100%;max-height:84vh;object-fit:contain;border-radius:16px;background:#000}
+dialog.vmodal .x{position:absolute;right:-6px;top:-58px;width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,.4);background:none;color:#fff;font-size:24px;cursor:pointer}
+dialog.vmodal .nb{position:absolute;top:50%;transform:translateY(-50%);width:54px;height:54px;border-radius:50%;border:1px solid rgba(255,255,255,.4);background:rgba(0,0,0,.45);color:#fff;font-size:22px;cursor:pointer}
+dialog.vmodal .pv{left:-70px}dialog.vmodal .nx{right:-70px}
+@media (max-width:1180px){.cgrid,.teamgrid,.qgrid2,.posts3{grid-template-columns:repeat(2,minmax(0,1fr))}.divgrid,.contactgrid{grid-template-columns:minmax(0,1fr)}.gal2{columns:3}dialog.vmodal .pv{left:8px}dialog.vmodal .nx{right:8px}}
+@media (max-width:760px){.cgrid,.teamgrid,.qgrid2,.posts3{grid-template-columns:minmax(0,1fr)}.hmain{grid-template-columns:44px 1fr 44px;gap:14px}.hmain b{font-size:23px}.hmain .go{width:44px;height:44px}.hrow .subs{padding-left:0}.gal2{columns:2;column-gap:10px}.gal2 button{margin-bottom:10px}.cfacts{padding:28px 22px}}
+
+</style>
+
+<style>
+.site-head .wrap{position:relative}
+.nav>li.hd{display:flex;align-items:center}
+.nav>li.hd>a.dtl{padding-right:4px}
+.nav>li.hd>button.dt{padding:0 12px 0 6px;min-width:36px;justify-content:center}
+.nav>li.hd:hover>a.dtl,.nav>li.hd:hover>button.dt{background:none}
+.nav>li.hd:hover{background:rgba(255,255,255,.09);border-radius:999px}
+@media (max-width:1180px){.nav>li.hd{flex-wrap:wrap}.nav>li.hd>a.dtl{flex:1;width:auto}.site-head.open .nav>li.hd>button.dt{width:58px;min-height:58px;padding:0}.nav>li.hd>.drop{flex-basis:100%}.nav>li.hd:hover{background:none}}
+.nav>li:has(>.drop.mega){position:static}
+@media (min-width:1181px){.drop.mega{display:block}}
+.drop.mega{left:50%;width:min(1140px,calc(100vw - 48px));padding:22px 28px 14px;max-height:calc(100vh - 132px);overflow-y:auto;overscroll-behavior:contain}
+.drop.mega::before{top:-64px;height:64px}
+.drop.mega .mflow{columns:5 180px;column-gap:22px}
+.drop.mega .mb{break-inside:avoid;padding-bottom:10px}
+.drop.mega .mfirst:not(:first-child){padding-top:12px}
+.drop.mega h4{padding:0 0 8px;margin:0 0 6px}
+.drop.mega h4 a{display:block;min-height:0;padding:0 8px;font:700 11.5px var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--sky-d)}
+.drop.mega h4 a:hover{background:none;color:var(--char)}
+.drop.mega a.mp{min-height:32px;padding:3px 8px;font-size:14.5px;font-weight:700;color:var(--char);line-height:1.25}
+.drop.mega a.mc{min-height:28px;padding:3px 8px 3px 22px;font-size:14px;font-weight:500;color:var(--muted);position:relative;line-height:1.25}
+.drop.mega a.mc::before{content:"";position:absolute;left:9px;top:50%;width:6px;height:1.5px;background:var(--line)}
+.drop.mega a:hover{background:var(--stone);color:var(--sky-d)}
+@media (max-width:1180px){.site-head .wrap{position:static}.nav>li:has(>.drop.mega){position:relative}
+.drop.mega{width:auto;max-height:none;overflow:visible;padding:10px 6px}.nav>li.open>.drop.mega{display:block}.drop.mega::before{display:none}.drop.mega .mflow{columns:1}
+.drop.mega h4 a{color:var(--sky-l)}.drop.mega a.mp{color:#fff;min-height:44px}.drop.mega a.mc{color:#c4cad1;min-height:44px}.drop.mega a.mc::before{background:rgba(255,255,255,.3)}}
+</style></head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="logo" href="https://cath-ux.github.io/turnkeyrenovators-preview/" aria-label="TurnKey Renovators home"><img src="https://www.turnkeyrenovators.com/wp-content/uploads/2025/03/logo.png" alt="TurnKey Renovators LLC logo" width="128" height="92"></a>
+    <ul class="nav" id="nav">
+      <li class="hd"><a class="dtl" href="https://cath-ux.github.io/turnkeyrenovators-preview/about/">About</a><button type="button" class="dt" aria-expanded="false" aria-label="Show About menu"><span class="car"></span></button>
+        <div class="drop"><a href="https://cath-ux.github.io/turnkeyrenovators-preview/about/">About Us</a><a href="https://cath-ux.github.io/turnkeyrenovators-preview/the-team/">The Team</a><a href="https://cath-ux.github.io/turnkeyrenovators-preview/gallery/">Gallery</a><a href="https://cath-ux.github.io/turnkeyrenovators-preview/faq/">FAQ</a><a href="https://cath-ux.github.io/turnkeyrenovators-preview/testimonials/">Testimonials</a></div></li>
+      <li class="hd"><a class="dtl" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/">Services</a><button type="button" class="dt" aria-expanded="false" aria-label="Show Services menu"><span class="car"></span></button>
+        <div class="drop mega"><div class="mflow"><div class="mb mfirst"><h4><a href="https://cath-ux.github.io/turnkeyrenovators-preview/services/residential/">Residential Interior Renovations</a></h4><a class="mp" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/residential/whole-home-renovation/">Whole Home Renovation</a><a class="mc" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/residential/whole-home-renovation/historical/">Historic Home Renovation</a><a class="mc" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/residential/whole-home-renovation/home-expansion/">Home Addition &amp; Expansion</a></div><div class="mb"><a class="mp" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/residential/kitchen-renovation/">Kitchen Renovation</a><a class="mc" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/residential/kitchen-renovation/cabinet/">Kitchen Cabinet Installation</a><a class="mc" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/residential/kitchen-renovation/countertop/">Kitchen Countertop Installation</a><a class="mc" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/residential/kitchen-renovation/island/">Kitchen Island Design &amp; Build</a><a class="mc" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/residential/kitchen-renovation/flooring/">Kitchen Flooring</a><a class="mc" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/residential/kitchen-renovation/small-kitchen/">Small Kitchen Renovation</a></div><div class="mb"><a class="mp" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/residential/bathroom-renovation/">Bathroom Renovation</a><a class="mc" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/residential/bathroom-renovation/master/">Master Bathroom Renovation</a><a class="mc" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/residential/bathroom-renovation/guest/">Guest Bathroom Renovation</a><a class="mc" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/residential/bathroom-renovation/vanity/">Bathroom Vanity Installation</a><a class="mc" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/residential/bathroom-renovation/shower-tub/">Shower &amp; Tub Installation</a><a class="mc" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/residential/bathroom-renovation/ada-accessible/">ADA Accessible Bathroom Renovation</a></div><div class="mb"><a class="mp" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/residential/bedroom-renovation/">Bedroom Renovation</a></div><div class="mb"><a class="mp" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/residential/living-room-renovation/">Living Room Renovation</a></div><div class="mb"><a class="mp" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/residential/basement-renovation/">Basement Renovation &amp; Finishing</a></div><div class="mb"><a class="mp" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/residential/flooring/">Flooring Installation</a><a class="mc" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/residential/flooring/hardwood/">Hardwood Flooring</a><a class="mc" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/residential/flooring/tile/">Tile Flooring</a><a class="mc" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/residential/flooring/lvp/">Luxury Vinyl Plank</a></div><div class="mb"><a class="mp" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/residential/drywall/">Drywall Installation &amp; Repair</a></div><div class="mb"><a class="mp" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/residential/interior-painting/">Interior Painting</a></div><div class="mb mfirst"><h4><a href="https://cath-ux.github.io/turnkeyrenovators-preview/services/exterior/">Exterior &amp; Construction Services</a></h4><a class="mp" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/exterior/roofing/">Roofing</a><a class="mc" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/exterior/roofing/repair/">Roof Repair</a><a class="mc" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/exterior/roofing/replacement/">Roof Replacement</a><a class="mc" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/exterior/roofing/storm-damage/">Storm Damage Roof Repair</a></div><div class="mb"><a class="mp" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/exterior/siding/">Siding</a><a class="mc" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/exterior/siding/vinyl/">Vinyl Siding</a><a class="mc" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/exterior/siding/wood/">Wood Siding</a><a class="mc" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/exterior/siding/fiber-cement/">Fiber Cement Siding</a></div><div class="mb"><a class="mp" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/exterior/fencing/">Fencing</a><a class="mc" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/exterior/fencing/wood/">Wood Fencing</a><a class="mc" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/exterior/fencing/metal/">Metal Fencing</a><a class="mc" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/exterior/fencing/privacy/">Privacy Fencing</a></div><div class="mb"><a class="mp" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/exterior/ironworks/">Ironworks &amp; Gates</a><a class="mc" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/exterior/ironworks/railings/">Iron Railings</a><a class="mc" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/exterior/ironworks/balconies/">Iron Balconies</a><a class="mc" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/exterior/ironworks/gates/">Access Gates &amp; Security Gates</a></div><div class="mb"><a class="mp" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/exterior/concrete/">Concrete Services</a><a class="mc" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/exterior/concrete/driveways/">Driveways</a><a class="mc" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/exterior/concrete/patios/">Patios</a><a class="mc" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/exterior/concrete/walkways/">Walkways &amp; Sidewalks</a></div><div class="mb"><a class="mp" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/exterior/painting/">Exterior Painting</a></div><div class="mb"><a class="mp" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/exterior/demolition/">Demolition Services</a></div><div class="mb mfirst"><h4><a href="https://cath-ux.github.io/turnkeyrenovators-preview/services/commercial/">Commercial Renovation</a></h4><a class="mp" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/commercial/office-renovation/">Office Renovation</a></div><div class="mb"><a class="mp" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/commercial/retail-store-renovation/">Retail Store Renovation</a></div><div class="mb"><a class="mp" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/commercial/restaurant-renovation/">Restaurant Renovation</a></div><div class="mb"><a class="mp" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/commercial/build-out/">Commercial Interior Build-Out</a></div><div class="mb"><a class="mp" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/commercial/medical-dental-office-renovation/">Medical &amp; Dental Office Renovation</a></div><div class="mb mfirst"><h4><a href="https://cath-ux.github.io/turnkeyrenovators-preview/services/outdoor-living/">Outdoor Living</a></h4><a class="mp" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/outdoor-living/outdoor-kitchen/">Outdoor Kitchen</a></div><div class="mb"><a class="mp" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/outdoor-living/pergolas-covered-patios/">Pergolas &amp; Covered Patios</a></div><div class="mb"><a class="mp" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/outdoor-living/patio/">Patio Installation</a></div><div class="mb"><a class="mp" href="https://cath-ux.github.io/turnkeyrenovators-preview/services/outdoor-living/glazing-systems/">Glazing Systems</a></div></div></div></li>
+      <li class="hd"><a class="dtl" href="https://cath-ux.github.io/turnkeyrenovators-preview/service-areas/">Service Areas</a><button type="button" class="dt" aria-expanded="false" aria-label="Show Service Areas menu"><span class="car"></span></button>
+        <div class="drop cities"><a href="https://cath-ux.github.io/turnkeyrenovators-preview/service-areas/metairie/">Metairie</a><a href="https://cath-ux.github.io/turnkeyrenovators-preview/service-areas/kenner/">Kenner</a><a href="https://cath-ux.github.io/turnkeyrenovators-preview/service-areas/gretna/">Gretna</a><a href="https://cath-ux.github.io/turnkeyrenovators-preview/service-areas/harahan/">Harahan</a><a href="https://cath-ux.github.io/turnkeyrenovators-preview/service-areas/river-ridge/">River Ridge</a><a href="https://cath-ux.github.io/turnkeyrenovators-preview/service-areas/st-rose/">St. Rose</a><a href="https://cath-ux.github.io/turnkeyrenovators-preview/service-areas/laplace/">LaPlace</a><a href="https://cath-ux.github.io/turnkeyrenovators-preview/service-areas/slidell/">Slidell</a><a href="https://cath-ux.github.io/turnkeyrenovators-preview/service-areas/mandeville/">Mandeville</a><a href="https://cath-ux.github.io/turnkeyrenovators-preview/service-areas/covington/">Covington</a><a href="https://cath-ux.github.io/turnkeyrenovators-preview/service-areas/madisonville/">Madisonville</a><a href="https://cath-ux.github.io/turnkeyrenovators-preview/service-areas/hammond/">Hammond</a><a href="https://cath-ux.github.io/turnkeyrenovators-preview/service-areas/baton-rouge/">Baton Rouge</a><a href="https://cath-ux.github.io/turnkeyrenovators-preview/service-areas/">All Service Areas</a></div></li>
+      <li><a href="https://cath-ux.github.io/turnkeyrenovators-preview/blog/">Blog</a></li>
+      <li><a href="https://cath-ux.github.io/turnkeyrenovators-preview/contact/">Contact</a></li>
+    </ul>
+    <a class="head-phone" href="tel:5045278711"><small>Call us today</small><b>504-527-8711</b></a>
+    <a class="btn btn-sky head-cta" href="https://cath-ux.github.io/turnkeyrenovators-preview/contact/#form" data-estimate>Get Free Estimate</a>
+    <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<main>
+<section class="hero" aria-label="Page not found">
+  <img class="bg" src="https://www.turnkeyrenovators.com/wp-content/uploads/2025/03/IMG_7160-scaled-1.jpg" alt="" fetchpriority="high">
+  <div class="wrap">
+    <ol class="crumbs"><li><a href="https://cath-ux.github.io/turnkeyrenovators-preview/">Home</a></li><li aria-current="page">Page not found</li></ol>
+    <span class="kicker" style="margin-top:28px">Error 404</span>
+    <h1 class="hsplit">Page <em>not found</em></h1>
+    <p class="lede">At <strong><a href="https://cath-ux.github.io/turnkeyrenovators-preview/">TurnKey Renovators</a></strong>, we may have moved this page during our site update. Use the links below, or <a href="https://cath-ux.github.io/turnkeyrenovators-preview/contact/#form" data-estimate>request your free estimate</a> and we will point you in the right direction.</p>
+    <div class="ctapair"><a class="btn btn-sky" href="https://cath-ux.github.io/turnkeyrenovators-preview/contact/#form" data-estimate>Get Your Free Estimate</a><a class="btn btn-line" href="tel:5045278711">Call 504-527-8711</a></div>
+    
+    <div style="height:64px"></div>
+  </div>
+</section>
+<section class="bg-white" id="find"><div class="wrap"><div class="sechead center"><span class="kicker" data-rv>Find your project</span><h2 class="split">Start from <em>one of these</em></h2></div><ul class="plone"><li data-rv style="--i:0"><a href="https://cath-ux.github.io/turnkeyrenovators-preview/services/residential/"><span class="pt"><b>Residential</b><span>Kitchens, baths, flooring and whole-home work</span></span><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li><li data-rv style="--i:1"><a href="https://cath-ux.github.io/turnkeyrenovators-preview/services/exterior/"><span class="pt"><b>Exterior</b><span>Roofing, siding, fencing, concrete and ironwork</span></span><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li><li data-rv style="--i:2"><a href="https://cath-ux.github.io/turnkeyrenovators-preview/services/commercial/"><span class="pt"><b>Commercial</b><span>Offices, retail, restaurants and build-outs</span></span><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li><li data-rv style="--i:3"><a href="https://cath-ux.github.io/turnkeyrenovators-preview/services/outdoor-living/"><span class="pt"><b>Outdoor living</b><span>Outdoor kitchens, pergolas, patios and glazing</span></span><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li><li data-rv style="--i:0"><a href="https://cath-ux.github.io/turnkeyrenovators-preview/service-areas/"><span class="pt"><b>Service areas</b><span>New Orleans and the cities around it</span></span><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li><li data-rv style="--i:1"><a href="https://cath-ux.github.io/turnkeyrenovators-preview/blog/"><span class="pt"><b>Blog</b><span>Renovation guides for New Orleans owners</span></span><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li></ul></div></section><section class="fvid" aria-label="Free estimates">
+  <video class="fv" muted loop playsinline preload="none" poster="assets/footer-poster.jpg" aria-hidden="true"><source media="(max-width:760px)" src="https://cath-ux.github.io/turnkeyrenovators-preview/assets/footer-720.mp4" type="video/mp4"><source src="https://cath-ux.github.io/turnkeyrenovators-preview/assets/footer-1080.mp4" type="video/mp4"></video>
+  <div class="wrap">
+    <span class="kicker" data-rv>Free estimates</span>
+    <h2 class="split">Tell us about <em>your project</em></h2>
+    <p data-rv>Tell us about the project and we will come out, measure and hand you a clear written estimate with no hidden fees.</p>
+    <a class="tel" data-rv href="tel:5045278711">504-527-8711</a>
+    <div class="ctapair center" data-rv><a class="btn btn-sky" href="https://cath-ux.github.io/turnkeyrenovators-preview/contact/#form" data-estimate>Get Your Free Estimate</a><a class="btn btn-line" href="https://www.turnkeyrenovators.com/financing-options/">Explore Financing</a></div>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div><img src="https://www.turnkeyrenovators.com/wp-content/uploads/2025/03/logo.png" alt="TurnKey Renovators LLC logo" width="110" height="79" style="height:79px;width:auto">
+        <p style="margin-top:18px">2929 Tulane Ave<br>New Orleans, LA 70119</p><p style="margin-top:8px"><a href="tel:5045278711">504-527-8711</a></p>
+        <p class="lic">Residential License # 890459<br>Commercial License # 3667</p>
+        <div class="social">
+          <a href="https://www.facebook.com/turnkeyrenovatorsllc" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8h3V4h-3c-2.8 0-4 1.7-4 4.2V10H7v4h3v8h4v-8h3l1-4h-4V8.6c0-.4.2-.6.6-.6z"/></svg></a>
+          <a href="https://www.instagram.com/turnkeyrenovatorsllc/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          <a href="https://www.youtube.com/@TurnKeyRenovators" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 8.2c-.2-1.6-1-2.6-2.6-2.8C16.8 5 12 5 12 5s-4.8 0-7.4.4C3 5.6 2.2 6.6 2 8.2 1.8 9.6 1.8 12 1.8 12s0 2.4.2 3.8c.2 1.6 1 2.6 2.6 2.8C7.2 19 12 19 12 19s4.8 0 7.4-.4c1.6-.2 2.4-1.2 2.6-2.8.2-1.4.2-3.8.2-3.8s0-2.4-.2-3.8zM10 15V9l5.2 3z"/></svg></a>
+        </div></div>
+      <div><h4>Quick links</h4><ul><li><a href="https://cath-ux.github.io/turnkeyrenovators-preview/">Home</a></li><li><a href="https://cath-ux.github.io/turnkeyrenovators-preview/about/">About</a></li><li><a href="https://cath-ux.github.io/turnkeyrenovators-preview/services/">Services</a></li><li><a href="https://cath-ux.github.io/turnkeyrenovators-preview/gallery/">Gallery</a></li><li><a href="https://cath-ux.github.io/turnkeyrenovators-preview/blog/">Blog</a></li><li><a href="https://www.turnkeyrenovators.com/financing-options/">Financing</a></li><li><a href="https://cath-ux.github.io/turnkeyrenovators-preview/contact/">Contact</a></li></ul></div>
+      <div><h4>Services</h4><ul><li><a href="https://cath-ux.github.io/turnkeyrenovators-preview/services/residential/">Residential</a></li><li><a href="https://cath-ux.github.io/turnkeyrenovators-preview/services/exterior/">Exterior</a></li><li><a href="https://cath-ux.github.io/turnkeyrenovators-preview/services/commercial/">Commercial</a></li><li><a href="https://cath-ux.github.io/turnkeyrenovators-preview/services/outdoor-living/">Outdoor Living</a></li></ul></div>
+      <div><h4>Service areas</h4><ul><li><a href="https://cath-ux.github.io/turnkeyrenovators-preview/service-areas/metairie/">Metairie</a></li><li><a href="https://cath-ux.github.io/turnkeyrenovators-preview/service-areas/kenner/">Kenner</a></li><li><a href="https://cath-ux.github.io/turnkeyrenovators-preview/service-areas/gretna/">Gretna</a></li><li><a href="https://cath-ux.github.io/turnkeyrenovators-preview/service-areas/harahan/">Harahan</a></li><li><a href="https://cath-ux.github.io/turnkeyrenovators-preview/service-areas/river-ridge/">River Ridge</a></li><li><a href="https://cath-ux.github.io/turnkeyrenovators-preview/service-areas/st-rose/">St. Rose</a></li><li><a href="https://cath-ux.github.io/turnkeyrenovators-preview/service-areas/laplace/">LaPlace</a></li><li><a href="https://cath-ux.github.io/turnkeyrenovators-preview/service-areas/slidell/">Slidell</a></li><li><a href="https://cath-ux.github.io/turnkeyrenovators-preview/service-areas/mandeville/">Mandeville</a></li><li><a href="https://cath-ux.github.io/turnkeyrenovators-preview/service-areas/covington/">Covington</a></li><li><a href="https://cath-ux.github.io/turnkeyrenovators-preview/service-areas/madisonville/">Madisonville</a></li><li><a href="https://cath-ux.github.io/turnkeyrenovators-preview/service-areas/hammond/">Hammond</a></li><li><a href="https://cath-ux.github.io/turnkeyrenovators-preview/service-areas/baton-rouge/">Baton Rouge</a></li></ul></div>
+      <div class="fmapcol"><h4>Find us</h4><div class="fmapmini"><iframe src="https://www.google.com/maps?cid=11447736411981353511&amp;output=embed" title="TurnKey Renovators on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div><p>Mon to Sat, 7:00 AM to 6:00 PM<br>Sunday, closed</p><a class="dir" href="https://www.google.com/maps?cid=11447736411981353511" target="_blank" rel="noopener">Get directions &#8594;</a></div>
+    </div>
+    <div class="legal"><span>&copy; TurnKey Renovators LLC &middot; <a href="https://www.turnkeyrenovators.com/sitemap/">Sitemap</a> &middot; <a href="https://www.turnkeyrenovators.com/terms-conditions/">Terms and Conditions</a> &middot; <a href="https://www.turnkeyrenovators.com/privacy-policy/">Privacy Policy</a></span><span>Prototype template for turnkeyrenovators.com</span></div>
+  </div>
+</footer>
+<a class="side-tab" href="https://cath-ux.github.io/turnkeyrenovators-preview/contact/#form" data-estimate>Get Free Estimate</a>
+<div class="callbar"><a class="c1" href="tel:5045278711">Call Now</a><a class="c2" href="https://cath-ux.github.io/turnkeyrenovators-preview/contact/#form" data-estimate>Free Estimate</a></div>
+<button class="to-top" type="button" aria-label="Back to top">&#8593;</button>
+<script src="https://cath-ux.github.io/turnkeyrenovators-preview/assets/tkr-base.js"></script>
+<dialog id="tkr-estimate" class="estmodal" aria-labelledby="tkr-est-title">
+<div class="esthead"><div><span class="kicker">Free estimate</span><h2 id="tkr-est-title">Tell us about <em>your project</em></h2><p>Or call <a href="tel:5045278711">504-527-8711</a>, Monday to Saturday, 7:00 AM to 6:00 PM.</p></div><button type="button" class="estx" aria-label="Close" autofocus>&times;</button></div>
+<div class="estbody"><iframe data-src="https://api.leadconnectorhq.com/widget/form/gfFoD91YKrsWMVrYtujS" id="inline-gfFoD91YKrsWMVrYtujS" title="Get Your FREE Estimates" data-layout="{'id':'INLINE'}" data-trigger-type="alwaysShow" data-activation-type="alwaysActivated" data-deactivation-type="neverDeactivate" data-form-name="Get Your FREE Estimates-w" data-height="1303" data-layout-iframe-id="inline-gfFoD91YKrsWMVrYtujS" data-form-id="gfFoD91YKrsWMVrYtujS" style="width:100%;height:1303px;border:0"></iframe></div>
+</dialog>
+<style>
+.estmodal{position:fixed;inset:0;margin:auto;height:min(860px,calc(100vh - 48px));border:0;padding:0;border-radius:24px;width:min(620px,calc(100vw - 32px));max-height:calc(100vh - 48px);background:#fff;box-shadow:0 40px 90px rgba(0,0,0,.4);overflow:hidden;flex-direction:column}
+.estmodal[open]{display:flex}
+.estmodal::backdrop{background:rgba(8,9,11,.72)}
+.esthead{display:flex;justify-content:space-between;gap:16px;padding:26px 28px 18px;border-bottom:1px solid var(--stone-2);background:var(--stone)}
+.esthead h2{font-size:30px;margin-top:10px}
+.esthead p{font-size:15px;color:var(--text);margin-top:8px}
+.esthead p a{color:var(--sky-d);font-weight:700}
+.estx{flex:none;width:44px;height:44px;border-radius:50%;border:1.5px solid var(--char);background:#fff;font-size:24px;line-height:1;cursor:pointer;color:var(--char)}
+.estx:hover{background:var(--char);color:#fff}
+.estbody{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:8px 10px;background:#fff}.estbody iframe{min-height:620px}
+@media (max-width:760px){.estmodal{width:100vw;max-width:100vw;max-height:100dvh;height:100dvh;border-radius:0;margin:0}.esthead{padding:18px 18px 14px}.esthead h2{font-size:24px}}
+</style>
+<script>(function(){var d=document.getElementById('tkr-estimate');if(!d||!d.showModal)return;var f=d.querySelector('iframe'),loaded=false;
+function open(e){if(e){e.preventDefault()}if(!loaded){f.src=f.getAttribute('data-src');loaded=true;if(!document.querySelector('script[src*="form_embed.js"]')){var s=document.createElement('script');s.src='https://link.msgsndr.com/js/form_embed.js';document.body.appendChild(s)}}d.showModal()}
+document.addEventListener('click',function(e){var a=e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';if(a.hasAttribute('data-estimate')||/\/contact\/#form$/.test(h)){open(e)}});
+d.querySelector('.estx').addEventListener('click',function(){d.close()});d.addEventListener('click',function(e){if(e.target===d)d.close()});})();</script>
+</body>
+</html>
